@@ -1,10 +1,21 @@
 package sungJuk;
 
+import java.util.InputMismatchException;
+
 public class SungJukMain {
 
 	public static void main(String[] args) {
-		SungJukService sjs = new SungJukService();
-		sjs.menu();
+
+		SungJukService sungJukService = new SungJukService();
+				
+		while(true) {
+			try {
+				sungJukService.menu();
+				break;
+			}catch(InputMismatchException e) {
+				System.out.println("번호를 정확히 입력해 주세요."); 
+			}
+		}
 
 	}
 
