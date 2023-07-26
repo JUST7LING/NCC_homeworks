@@ -24,8 +24,9 @@ public class SungJukService {
 			System.out.println("************************");
 			System.out.print("번호 : ");
 			cont = scanner.nextInt();
-
+			
 			if(cont==6) break;
+
 			switch(cont) {
 			
 			case 1: try {
@@ -45,7 +46,7 @@ public class SungJukService {
 					
 			case 5: sungJuk = new SungJukSort();
 					break;
-				
+					
 			default: System.out.println("값이 잘못되었습니다.");
 					 continue;
 			}// switch
